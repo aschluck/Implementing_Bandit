@@ -171,10 +171,3 @@ ___________________________________________________
     print(Z)
     print(O)
     return theta_hat,V,Z,O
-
-def sample_St(simulation_object, K):
-    temp=[]
-    for k in range(K):
-        input_A, _, _ = algos.random(simulation_object)
-        temp.append(input_A)
-    return np.array(temp)    
